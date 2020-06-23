@@ -900,6 +900,7 @@
 }
 
 .card-dark .card-header {
+  background-color: #2f353a;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -909,6 +910,126 @@
 }
 
 .card-dark .card-text {
+  color: #f0f0f0;
+}
+
+.card-danger {
+  background-color: #dc3545;
+}
+
+.card-danger .card-header,
+.card-danger .card-body,
+.card-danger .card-footer {
+  background-color: #dc3545;
+}
+
+.card-danger .card-header {
+  background-color: #da2c3d;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.card-danger .card-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: #d32535;
+}
+
+.card-danger .card-text {
+  color: #f0f0f0;
+}
+
+.card-warning {
+  background-color: #ffc107;
+}
+
+.card-warning .card-header,
+.card-warning .card-body,
+.card-warning .card-footer {
+  background-color: #ffc107;
+}
+
+.card-warning .card-header {
+  background-color: #f2b500;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.card-warning .card-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  background-color: #dda600;
+}
+
+.card-warning .card-body {
+  background-color: #fcbd00;
+}
+
+.card-primary {
+  background-color: #007bff;
+}
+
+.card-primary .card-header,
+.card-primary .card-body,
+.card-primary .card-footer {
+  background-color: #007bff;
+}
+
+.card-primary .card-header {
+  background-color: #0076f5;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.card-primary .card-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  background-color: #006fe6;
+}
+
+.card-primary .card-text {
+  color: #f0f0f0;
+}
+
+.card-info {
+  background-color: #17a2b8;
+}
+
+.card-info .card-header,
+.card-info .card-body,
+.card-info .card-footer {
+  background-color: #17a2b8;
+}
+
+.card-info .card-header {
+  background-color: #169aaf;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.card-info .card-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  background-color: #148ea1;
+}
+
+.card-info .card-text {
+  color: #f0f0f0;
+}
+
+.card-success {
+  background-color: #28a745;
+}
+
+.card-success .card-header,
+.card-success .card-body,
+.card-success .card-footer {
+  background-color: #28a745;
+}
+
+.card-success .card-header {
+  background-color: #269f42;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.card-success .card-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  background-color: #23923d;
+}
+
+.card-success .card-text {
   color: #f0f0f0;
 }
 

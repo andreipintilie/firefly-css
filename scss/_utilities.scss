@@ -317,11 +317,120 @@
         background-color: map-get($colors, "dark");
     }
     .card-header {
+        background-color: darken(map-get($colors, "dark"), 2%);
         border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     }
     .card-footer {
         border-top: 1px solid rgba(255, 255, 255, 0.2);
         background-color: darken(map-get($colors, "dark"), 5%);
+    }
+    .card-text {
+        color: map-get($colors, "default");
+    }
+}
+
+//Danger Card
+.card-danger {
+    background-color: map-get($colors, "danger");
+    .card-header,
+    .card-body,
+    .card-footer {
+        background-color: map-get($colors, "danger");
+    }
+    .card-header {
+        background-color: darken(map-get($colors, "danger"), 2%);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    .card-footer {
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        background-color: darken(map-get($colors, "danger"), 5%);
+    }
+    .card-text {
+        color: map-get($colors, "default");
+    }
+}
+
+//Warning Card
+.card-warning {
+    background-color: map-get($colors, "warning");
+    .card-header,
+    .card-body,
+    .card-footer {
+        background-color: map-get($colors, "warning");
+    }
+    .card-header {
+        background-color: darken(map-get($colors, "warning"), 4%);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    }
+    .card-footer {
+        border-top: 1px solid rgba(255, 255, 255, 0.4);
+        background-color: darken(map-get($colors, "warning"), 8%);
+    }
+    .card-body {
+        background-color: darken(map-get($colors, "warning"), 2%);
+    }
+    .card-text {
+        color: map-get($colors, "muted");
+    }
+}
+
+//Primary Card
+.card-primary {
+    background-color: map-get($colors, "primary");
+    .card-header,
+    .card-body,
+    .card-footer {
+        background-color: map-get($colors, "primary");
+    }
+    .card-header {
+        background-color: darken(map-get($colors, "primary"), 2%);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    }
+    .card-footer {
+        border-top: 1px solid rgba(255, 255, 255, 0.4);
+        background-color: darken(map-get($colors, "primary"), 5%);
+    }
+    .card-text {
+        color: map-get($colors, "default");
+    }
+}
+
+//Info Card
+.card-info {
+    background-color: map-get($colors, "info");
+    .card-header,
+    .card-body,
+    .card-footer {
+        background-color: map-get($colors, "info");
+    }
+    .card-header {
+        background-color: darken(map-get($colors, "info"), 2%);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    }
+    .card-footer {
+        border-top: 1px solid rgba(255, 255, 255, 0.4);
+        background-color: darken(map-get($colors, "info"), 5%);
+    }
+    .card-text {
+        color: map-get($colors, "default");
+    }
+}
+
+//Success Card
+.card-success {
+    background-color: map-get($colors, "success");
+    .card-header,
+    .card-body,
+    .card-footer {
+        background-color: map-get($colors, "success");
+    }
+    .card-header {
+        background-color: darken(map-get($colors, "success"), 2%);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    }
+    .card-footer {
+        border-top: 1px solid rgba(255, 255, 255, 0.4);
+        background-color: darken(map-get($colors, "success"), 5%);
     }
     .card-text {
         color: map-get($colors, "default");
