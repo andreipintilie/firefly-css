@@ -65,8 +65,15 @@
 .font-bold {
     font-weight: bold;
 }
-.font-not-bold {
-    font-weight: normal;
+.font-normal {
+    font-weight: normal !important;
+}
+
+//Font Weight
+@each $number, $weight in $fontWeight {
+    .font-weight-#{$number} {
+        font-weight: $weight !important;
+    }
 }
 
 //Font Size
@@ -283,6 +290,7 @@
     background-color: map-get($colors, "default");
     box-shadow: 1px 2px 3px rgba(5, 5, 5, 0.5);
     border-radius: 2px;
+    padding: 0 5px;
 }
 .card-header {
     padding: 5px 0px;
@@ -300,12 +308,16 @@
     border-top: 1px solid rgba(5, 5, 5, 0.1);
     border-radius: 2px;
 }
-.card-text {
+.card-text,
+.card-title {
     padding: 10px 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     color: map-get($colors, "dark");
+}
+.card-title {
+    font-weight: bold;
 }
 
 //Black Card
@@ -324,7 +336,8 @@
         border-top: 1px solid rgba(255, 255, 255, 0.2);
         background-color: darken(map-get($colors, "dark"), 5%);
     }
-    .card-text {
+    .card-text,
+    .card-title {
         color: map-get($colors, "default");
     }
 }
@@ -345,7 +358,8 @@
         border-top: 1px solid rgba(255, 255, 255, 0.2);
         background-color: darken(map-get($colors, "danger"), 5%);
     }
-    .card-text {
+    .card-text,
+    .card-title {
         color: map-get($colors, "default");
     }
 }
@@ -369,7 +383,8 @@
     .card-body {
         background-color: darken(map-get($colors, "warning"), 2%);
     }
-    .card-text {
+    .card-text,
+    .card-title {
         color: map-get($colors, "muted");
     }
 }
@@ -390,7 +405,8 @@
         border-top: 1px solid rgba(255, 255, 255, 0.4);
         background-color: darken(map-get($colors, "primary"), 5%);
     }
-    .card-text {
+    .card-text,
+    .card-title {
         color: map-get($colors, "default");
     }
 }
@@ -411,7 +427,8 @@
         border-top: 1px solid rgba(255, 255, 255, 0.4);
         background-color: darken(map-get($colors, "info"), 5%);
     }
-    .card-text {
+    .card-text,
+    .card-title {
         color: map-get($colors, "default");
     }
 }
@@ -432,7 +449,8 @@
         border-top: 1px solid rgba(255, 255, 255, 0.4);
         background-color: darken(map-get($colors, "success"), 5%);
     }
-    .card-text {
+    .card-text,
+    .card-title {
         color: map-get($colors, "default");
     }
 }

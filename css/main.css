@@ -202,8 +202,44 @@
   font-weight: bold;
 }
 
-.font-not-bold {
-  font-weight: normal;
+.font-normal {
+  font-weight: normal !important;
+}
+
+.font-weight-100 {
+  font-weight: 100 !important;
+}
+
+.font-weight-200 {
+  font-weight: 200 !important;
+}
+
+.font-weight-300 {
+  font-weight: 300 !important;
+}
+
+.font-weight-400 {
+  font-weight: 400 !important;
+}
+
+.font-weight-500 {
+  font-weight: 500 !important;
+}
+
+.font-weight-600 {
+  font-weight: 600 !important;
+}
+
+.font-weight-700 {
+  font-weight: 700 !important;
+}
+
+.font-weight-800 {
+  font-weight: 800 !important;
+}
+
+.font-weight-900 {
+  font-weight: 900 !important;
 }
 
 .size-1 {
@@ -860,6 +896,7 @@
   background-color: #f0f0f0;
   box-shadow: 1px 2px 3px rgba(5, 5, 5, 0.5);
   border-radius: 2px;
+  padding: 0 5px;
 }
 
 .card-header {
@@ -881,12 +918,17 @@
   border-radius: 2px;
 }
 
-.card-text {
+.card-text,
+.card-title {
   padding: 10px 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   color: #343a40;
+}
+
+.card-title {
+  font-weight: bold;
 }
 
 .card-dark {
@@ -909,7 +951,8 @@
   background-color: #292d32;
 }
 
-.card-dark .card-text {
+.card-dark .card-text,
+.card-dark .card-title {
   color: #f0f0f0;
 }
 
@@ -933,7 +976,8 @@
   background-color: #d32535;
 }
 
-.card-danger .card-text {
+.card-danger .card-text,
+.card-danger .card-title {
   color: #f0f0f0;
 }
 
@@ -981,7 +1025,8 @@
   background-color: #006fe6;
 }
 
-.card-primary .card-text {
+.card-primary .card-text,
+.card-primary .card-title {
   color: #f0f0f0;
 }
 
@@ -1005,7 +1050,8 @@
   background-color: #148ea1;
 }
 
-.card-info .card-text {
+.card-info .card-text,
+.card-info .card-title {
   color: #f0f0f0;
 }
 
@@ -1029,7 +1075,8 @@
   background-color: #23923d;
 }
 
-.card-success .card-text {
+.card-success .card-text,
+.card-success .card-title {
   color: #f0f0f0;
 }
 
