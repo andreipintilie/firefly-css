@@ -1,0 +1,20 @@
+$DEVELOPMENT: 1;
+
+@import "variables";
+@import "utilities";
+@import "resets";
+
+@if $DEVELOPMENT == 1 {
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: map-get($colors, "default");
+
+    @if $DEVELOPMENT == 1 {
+        font-family: "Montserrat", sans-serif;
+    }
+}
+
+@import "responsivity";
