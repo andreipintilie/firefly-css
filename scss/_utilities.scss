@@ -1,6 +1,6 @@
 //Some functions
 @function set-text-color($color) {
-    @if (lightness($color) > 50) {
+    @if (lightness($color) > 54) {
         @return #191919;
     } @else {
         @return #f0f0f0;
@@ -32,9 +32,9 @@
     clear: both;
 }
 
-@each $number, $width in $cols {
+@each $number, $width in $columnSizes {
     .col-#{$number} {
-        width: $width;
+        flex: $width;
         padding: 10px;
     }
 }
@@ -88,7 +88,7 @@
 
 //Font Size
 @each $number, $size in $sizes {
-    .size-#{$number} {
+    .font-size-#{$number} {
         font-size: $size;
     }
 }
@@ -275,9 +275,10 @@
 
 //Button Classes (There will be more button styles)
 .btn-1 {
-    color: map-get($colors, "default");
-    padding: 7px 10px;
+    padding: 8px 15px;
     border: none;
+    border-radius: 5px;
+    background-color: map-get($colors, "default");
     transition: all 0.3s ease-in-out;
 }
 
@@ -285,13 +286,22 @@
 @each $name, $color in $colors {
     .btn-#{$name} {
         background-color: $color;
+        @if $color == #f0f0f0 {
+            background-color: darken(map-get($colors, "default"), 10%);
+        }
         color: set-text-color($color);
     }
     .btn-#{$name}:hover {
         background-color: darken($color, 5%);
+        @if $color == #f0f0f0 {
+            background-color: darken(map-get($colors, "default"), 15%);
+        }
     }
     .btn-#{$name}:active {
         background-color: darken($color, 10%);
+        @if $color == #f0f0f0 {
+            background-color: darken(map-get($colors, "default"), 20%);
+        }
     }
 }
 
@@ -299,6 +309,7 @@
 :disabled {
     opacity: 0.8;
     color: map-get($colors, "disabled");
+    pointer-events: none;
 }
 
 //Firefly Cards & Card Classes
@@ -320,7 +331,7 @@
     padding: 10px 0px;
 }
 .card-footer {
-    background-color: darken(map-get($colors, "default"), 10%);
+    background-color: darken(map-get($colors, "default"), 15%);
     border-top: 1px solid rgba(5, 5, 5, 0.1);
     border-radius: 2px;
 }
@@ -401,7 +412,7 @@
     }
     .card-text,
     .card-title {
-        color: map-get($colors, "muted");
+        color: darken(map-get($colors, "dark"), 10%);
     }
 }
 
