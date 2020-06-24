@@ -19,12 +19,19 @@
 
 //Grid System Classes
 .row {
+    width: 100%;
     display: flex;
     flex-direction: row;
 }
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 @each $number, $width in $cols {
     .col-#{$number} {
-        width: auto;
+        width: $width;
         padding: 10px;
     }
 }
@@ -79,6 +86,13 @@
 //Font Size
 @each $number, $size in $sizes {
     .size-#{$number} {
+        font-size: $size;
+    }
+}
+
+//Font Size (but it's vw)
+@each $number, $size in $textVw {
+    .font-#{$number} {
         font-size: $size;
     }
 }
@@ -290,7 +304,6 @@
     background-color: map-get($colors, "default");
     box-shadow: 1px 2px 3px rgba(5, 5, 5, 0.5);
     border-radius: 2px;
-    padding: 0 5px;
 }
 .card-header {
     padding: 5px 0px;
