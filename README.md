@@ -1,8 +1,18 @@
 # Why FireflyCSS
-I created this library for my own projects, but feel free to use it if you need a simple library to include in your project / app!
+The best CSS library for small projects/apps. FireflyCSS comes with a very small filesize!
+
+- main.css (40kbps)
+- main.min.css (33kbps)
+
+# Things that we haven't created yet
+
+- Navbars
+- Footers
+- Grid System
+- More button styles
 
 # About
-Firefly is a CSS Library based on the latest high-level frameworks, made for responsivity and easy-importable components, Firefly was inspired by Bootstrap and Tailwind.
+Firefly is a CSS library which contains modern components and modern UI elements, inspired by high-level CSS Frameworks.
 
 # License
 Released under the [MIT](https://mit-license.org/) License.
