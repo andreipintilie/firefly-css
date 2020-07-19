@@ -14,19 +14,19 @@ The best CSS library for small projects/apps. FireflyCSS comes with a very small
 # FireflyCSS's includes
 
 ```scss
-@import './resets';
-@import './variables';
-@import './utilities';
-@import './typography';
-@import './grids';
-@import './align';
-@import './borders';
-@import './display';
-@import './flex';
-@import './buttons';
-@import './cards';
-@import './badges';
-@import './navbar';
+@import 'resets';
+@import 'variables';
+@import 'utilities';
+@import 'typography';
+@import 'grids';
+@import 'align';
+@import 'borders';
+@import 'display';
+@import 'flex';
+@import 'buttons';
+@import 'cards';
+@import 'badges';
+@import 'navbar';
 ```
 
 # About
