@@ -4,7 +4,7 @@ The best CSS library for small projects/apps. FireflyCSS comes with a very small
 - main.css (41 kbps)
 - main.min.css (33.8 kbps)
 
-# Things that we haven't created yet
+# Things that we haven't added yet
 
 - Navbars
 - Footers
