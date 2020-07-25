@@ -27,6 +27,7 @@ The best CSS library for small projects/apps. FireflyCSS comes with a very small
 @import 'cards';
 @import 'badges';
 @import 'tips';
+@import 'notifications';
 @import 'navbar';
 ```
 
