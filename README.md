@@ -31,6 +31,23 @@ The best CSS library for small projects/apps. FireflyCSS comes with a very small
 @import 'navbar';
 ```
 
+# API Designed for custom classes
+
+```scss
+$utilities: (
+  'opacity': (
+    property: opacity,
+    class: o,
+    values: (
+      25: 25%,
+      50: 50%,
+      75: 75%,
+      100: 100%,
+    ),
+  ),
+);
+```
+
 # About
 Firefly is a CSS library which contains modern components and modern UI elements, inspired by high-level CSS Frameworks.
 
