@@ -14,8 +14,8 @@ The best CSS library for small projects/apps. FireflyCSS comes with a very small
 # FireflyCSS's includes
 
 ```scss
-@import 'resets';
 @import 'variables';
+@import 'resets';
 @import 'utilities';
 @import 'typography';
 @import 'grids';
@@ -45,6 +45,17 @@ $utilities: (
       100: 100%,
     ),
   ),
+  'font-size': (
+    property: font-size,
+    class: fsize,
+    values: (
+      1: 42px,
+      2: 32px,
+      3: 24px,
+      4: 20px,
+      5: 18px,
+      6: 16px,
+    ),
 );
 ```
 
