@@ -6,7 +6,6 @@ The best CSS library for small projects/apps. FireflyCSS comes with a very small
 
 # Things that we haven't added yet
 
-- Navbars
 - Footers
 - Grid System
 - More button styles
