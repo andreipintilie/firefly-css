@@ -89,13 +89,6 @@ $utilities: map-merge(
       )
     ),
     // ...
-    "margin": (
-      responsive: true,
-      property: margin,
-      class: m,
-      values: map-merge($spacers, (auto: auto))
-    ),
-    // ...
   ), $utilities);
 ```
 
