@@ -59,6 +59,50 @@ $utilities: (
 );
 ```
 
+## What the API-generated classes will look like
+
+```scss
+.o-25 {
+  opacity: 25% !important;
+}
+
+.o-50 {
+  opacity: 50% !important;
+}
+
+.o-75 {
+  opacity: 75% !important;
+}
+
+.o-100 {
+  opacity: 100% !important;
+}
+
+.fsize-1 {
+  font-size: 42px !important;
+}
+
+.fsize-2 {
+  font-size: 32px !important;
+}
+
+.fsize-3 {
+  font-size: 24px !important;
+}
+
+.fsize-4 {
+  font-size: 20px !important;
+}
+
+.fsize-5 {
+  font-size: 18px !important;
+}
+
+.fsize-6 {
+  font-size: 16px !important;
+}
+```
+
 # About
 Firefly is a CSS library which contains modern components and modern UI elements, inspired by high-level CSS Frameworks.
 
