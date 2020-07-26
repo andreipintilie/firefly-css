@@ -70,7 +70,7 @@ $utilities: (
 
 # Create a custom function via our API
 
-If you're using Firefly via SCSS:
+If you're using Firefly with SCSS:
 
 ```scss
 $utilities: () !default;
