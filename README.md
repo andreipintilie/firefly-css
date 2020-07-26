@@ -45,17 +45,6 @@ $utilities: (
       100: 100%,
     ),
   ),
-  'font-size': (
-    property: font-size,
-    class: fsize,
-    values: (
-      1: 42px,
-      2: 32px,
-      3: 24px,
-      4: 20px,
-      5: 18px,
-      6: 16px,
-   ),
 );
 ```
 
@@ -77,30 +66,37 @@ $utilities: (
 .o-100 {
   opacity: 100% !important;
 }
+```
 
-.fsize-1 {
-  font-size: 42px !important;
-}
+# Create a custom function via our API
 
-.fsize-2 {
-  font-size: 32px !important;
-}
+If you're using Firefly via SCSS:
 
-.fsize-3 {
-  font-size: 24px !important;
-}
-
-.fsize-4 {
-  font-size: 20px !important;
-}
-
-.fsize-5 {
-  font-size: 18px !important;
-}
-
-.fsize-6 {
-  font-size: 16px !important;
-}
+```scss
+$utilities: () !default;
+$utilities: map-merge(
+  (
+    // ...
+    "width": (
+      property: width,
+      class: w,
+      values: (
+        25: 25%,
+        50: 50%,
+        75: 75%,
+        100: 100%,
+        auto: auto
+      )
+    ),
+    // ...
+    "margin": (
+      responsive: true,
+      property: margin,
+      class: m,
+      values: map-merge($spacers, (auto: auto))
+    ),
+    // ...
+  ), $utilities);
 ```
 
 # About
