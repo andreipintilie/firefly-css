@@ -42,6 +42,7 @@ $utilities: (
   'opacity': (
     property: opacity,
     class: o,
+    important: yes,
     values: (
       25: 25%,
       50: 50%,
