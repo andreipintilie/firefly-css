@@ -73,7 +73,7 @@ $utilities: (
 }
 ```
 
-# Create a custom function via our API
+# Create a custom function by using our API
 
 If you're using Firefly with SCSS:
 
