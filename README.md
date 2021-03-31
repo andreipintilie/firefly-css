@@ -1,8 +1,19 @@
 # Why FireflyCSS
 The best CSS library for small projects/apps. FireflyCSS comes with a very small filesize!
 
-- main.css (42.7 kbps)
-- main.min.css (35.3 kbps)
+# CSS Import
+
+- main.css(42.7 kbps)
+
+```css
+@import 'https://andreipintilie.github.io/firefly-css/main.css';
+```
+
+- main.min.css(35.3 kbps)
+
+```css
+@import 'https://andreipintilie.github.io/firefly-css/main.min.css';
+```
 
 # Things that we haven't added yet
 
